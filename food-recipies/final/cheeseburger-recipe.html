@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Recipe || Final</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.svg" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="about.html" class="nav-link"> about </a>
+          <a href="tags.html" class="nav-link"> tags </a>
+          <a href="recipes.html" class="nav-link"> recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero">
+          <img
+            src="./assets/recipes/recipe-1.jpeg"
+            class="img recipe-hero-img"
+          />
+          <article class="recipe-info">
+            <h2>Cheeseburger</h2>
+            <p>
+              A cheeseburger is a hamburger topped with cheese. 
+              Traditionally, the slice of cheese is placed on top of the meat patty. 
+              The cheese is usually added to the cooking hamburger patty shortly before serving, which allows the cheese to melt. 
+              Cheeseburgers can include variations in structure, ingredients and composition.  
+            </p>
+            <div class="recipe-icons">
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>prep time</h5>
+                <p>20 min.</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>cook time</h5>
+                <p>20 min.</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>serving</h5>
+                <p>4 servings</p>
+              </article>
+            </div>
+            <p class="recipe-tags">
+              Tags : <a href="beef-tag.html">beef</a>
+            </p>
+          </article>
+        </section>
+        <!-- content -->
+        <section class="recipe-content">
+          <article>
+            <h4>instructions</h4>
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 1</p>
+                <div></div>
+              </header>
+              <p>
+              Divide the beef into 4 equal portions. 
+              Press a cube of pepper jack into the center of each and shape the meat around the cheese; 
+              form into patties, about 4 inches wide and 3/4 inch thick. 
+              Season the patties with salt and pepper.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 2</p>
+                <div></div>
+              </header>
+              <p>
+              Heat the vegetable oil in a large skillet over medium-high heat. 
+              Add the patties and cook until browned on the bottom, about 4 minutes. 
+              Flip the patties and top each with a slice of Cheddar; cook 4 to 5 more minutes.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 3</p>
+                <div></div>
+              </header>
+              <p>
+              Meanwhile, toast the hamburger buns and spread with ketchup, mustard and/or mayonnaise. 
+              Fill with the burgers and top with lettuce, tomato and/or red onion. Serve with pickles.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>ingredients</h4>
+              <p class="single-ingredient">1 1/2 pounds ground beef chuck</p>
+              <p class="single-ingredient">Four 1/2-inch cubes pepper jack cheese (about 1 ounce total)</p>
+              <p class="single-ingredient">Lettuce leaves, sliced tomato and/or sliced red onion, for topping</p>
+              <p class="single-ingredient">4 slices Cheddar cheese (about 2 ounces)</p>
+              <p class="single-ingredient">Pickles, for serving (optional)</p>
+            </div>
+            <div>
+              <h4>tools</h4>
+              <p class="single-tool">Griddle pan or skillet</p>
+              <p class="single-tool">Burger press.</p>
+              <p class="single-tool">Meat grinder.</p>
+              <p class="single-tool">Cutting Board</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">SimplyRecipes</span>
+        <button type="button" onclick="javascript:alert('Alert from JavaScript!')">JavaScriptAlert!</button>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

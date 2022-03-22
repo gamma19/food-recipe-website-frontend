@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact || Final</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.svg" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="about.html" class="nav-link"> about </a>
+          <a href="tags.html" class="nav-link"> tags </a>
+          <a href="recipes.html" class="nav-link"> recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+     <section class="contact-container">
+          <article class="contact-info">
+            <h3>Want To Get In Touch?</h3>
+            <p>
+              Please enter your:
+            </p>
+            <p>Name,Email and Message.</p>
+            <p>
+              We will contact you as soon as possible.
+              Our human resources and technical support is active on these hours--v
+            </p>
+            <div class="dropdown">
+              <button class="dropbtn">Available Hours</button>
+              <div class="dropdown-content">
+                <a>Mid-Week:08.00-17.00</a>
+                <a>Weekend:08.00-15.00</a>
+              </div>
+            </div>
+            <p>
+              You can even work with us if you send your own CV
+              and make your career portfolio way more better!
+            </p>
+          </article>
+          <article>
+            <form class="form contact-form">
+              <div class="form-row">
+                <label html="name" class="form-label">your name</label>
+                <input type="text" name="name" id="name" class="form-input" />
+              </div>
+              <div class="form-row">
+                <label html="email" class="form-label">your email</label>
+                <input type="text" name="email" id="email" class="form-input" />
+              </div>
+              <div class="form-row">
+                <label html="message" class="form-label">message</label>
+                <textarea name="message" id="message" class="form-textarea"></textarea>
+              </div>
+              <h5 class="featured-title">I...</h5>
+              <div>
+                <input type="radio" name = ".." value="..">want to work with you. </br>
+                <input type="radio" name = ".." value="..">need technical support. </br>
+                <h5 class="featured-title">or</h5>
+                <input type="radio" name = ".." value="..">I want to give you advices about... </br>
+              </div>
+              <div>
+                <input type="checkbox" id="gender1" name="gender1" value="M">
+                <label for="gender1">Italian foods.</label><br>
+              </div>
+              <div>
+                <input type="checkbox" id="gender2" name="gender2" value="F">
+                <label for="gender2">Mexican foods.</label><br>
+              </div>
+              <div>
+                <input type="checkbox" id="gender2" name="gender2" value="F">
+                <label for="gender2">Chinese foods.</label><br>
+              </div>
+              <button type="submit" class="btn btn-block">
+                submit
+              </button>
+            </form>
+          </article>
+        </section>
+     <!-- featured recipes -->
+       <section class="featured-recipes">
+        <h5 class="featured-title">Look At This Awesomeness!</h5>
+        <div class="recipes-list">
+          <!-- single recipe -->
+          <a href="cheeseburger-recipe.html" class="recipe">
+            <img
+              src="./assets/recipes/recipe-1.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Cheeseburger</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="thai-spring-roll-recipe.html" class="recipe">
+            <img
+              src="./assets/recipes/recipe-2.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Thai Spring Roll</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="turkish-stuffed-grape-leaves-recipe.html" class="recipe">
+            <img
+              src="./assets/recipes/recipe-3.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Turkish Stuffed Grape Leaves</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <!-- end of single recipe -->
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">SimplyRecipes</span>
+        <button type="button" onclick="javascript:alert('Alert from JavaScript!')">JavaScriptAlert!</button>
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
